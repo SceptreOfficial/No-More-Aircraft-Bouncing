@@ -8,8 +8,9 @@
 
 ["Air","Killed",{
 	params ["_vehicle"];
-	if (_vehicle isKindOf "UAV_01_base_F" || 
-		_vehicle isKindOf "UAV_06_base_F" || 
+
+	if (_vehicle isKindOf "UAV_01_base_F" ||
+		_vehicle isKindOf "UAV_06_base_F" ||
 		_vehicle isKindOf "ParachuteBase"
 	) exitWith {};
 
@@ -18,8 +19,10 @@
 		_vehicle remoteExec ["NMAB_fnc_particles",0];
 	} else {
 		[{
-			(getPos _this) # 2 < 8
+			isNull _this || {(getPos _this) # 2 < 8}
 		},{
+			if (isNull _this) exitWith {};
+
 			_this call NMAB_fnc_antiBounce;
 			_this remoteExec ["NMAB_fnc_particles",0];
 		},_vehicle,30,{}] call CBA_fnc_waitUntilAndExecute;
