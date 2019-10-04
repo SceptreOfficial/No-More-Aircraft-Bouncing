@@ -1,4 +1,4 @@
-#define VERSION "0.3"
+#define VERSION "0.4"
 #define REQUIRED_VERSION 1.9
 
 class CfgPatches {
