@@ -1,8 +1,6 @@
-if (!NMAB_setting_particlesEnabled) exitWith {};
-
 params ["_vehicle"];
 
-if (_vehicle isKindOf "Helicopter") then {
+if (NMAB_setting_pfxHelicopters && _vehicle isKindOf "Helicopter") then {
 	private _p1 = "#particlesource" createVehicleLocal getPos _vehicle;
 	_p1 setParticleClass "IEDMineGarbageBig1";
 	_p1 attachTo [_vehicle,[0,0,0]];
@@ -14,7 +12,7 @@ if (_vehicle isKindOf "Helicopter") then {
 	[{deleteVehicle _this},_p2,2] call CBA_fnc_waitAndExecute;
 };
 
-if (_vehicle isKindOf "Plane") then {
+if (NMAB_setting_pfxPlanes && _vehicle isKindOf "Plane") then {
 	private _p1 = "#particlesource" createVehicleLocal getPos _vehicle;
 	_p1 setParticleClass "BombExp1";
 	_p1 attachTo [_vehicle,[0,0,0]];

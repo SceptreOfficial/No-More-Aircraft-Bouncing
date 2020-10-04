@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="NMAB">
+	<Key ID="STR_NMAB_Title">
+		<English>No More Aircraft Bouncing</English>
+	</Key>
+	<Key ID="STR_NMAB_SettingCategory_Compatibility">
+		<English>Compatibility</English>
+	</Key>
+	<Key ID="STR_NMAB_SettingCategory_ParticleEffects">
+		<English>Particle Effects</English>
+	</Key>
+	<Key ID="STR_NMAB_SettingDisplayName_classExclusions">
+		<English>Class exclusions</English>
+	</Key>
+	<Key ID="STR_NMAB_SettingDescription_classExclusions">
+		<English>Comma-delimited list of additional aircraft classes to exclude from simulation. \nVanilla parachutes and small UAVs are already handled.</English>
+	</Key>
+	<Key ID="STR_NMAB_SettingDisplayName_pfxHelicopters">
+		<English>Extra particle effects - Helicopters</English>
+	</Key>
+	<Key ID="STR_NMAB_SettingDescription_pfxHelicopters">
+		<English>Enables extra fire, smoke, and particles created from helicopter wrecks.</English>
+	</Key>
+	<Key ID="STR_NMAB_SettingDisplayName_pfxPlanes">
+		<English>Extra particle effects - Planes</English>
+	</Key>
+	<Key ID="STR_NMAB_SettingDescription_pfxPlanes">
+		<English>Enables extra fire, smoke, and particles created from plane wrecks.</English>
+	</Key>
+</Project>
