@@ -1,0 +1,13 @@
+name = "No More Aircraft Bouncing";
+dir = "@nmab";
+author = "Sceptre";
+description = "No More Aircraft Bouncing";
+overview = "No More Aircraft Bouncing";
+picture = "nmab.paa";
+overviewPicture = "nmab.paa";
+logo = "nmab.paa";
+logoOver = "nmab.paa";
+actionName = "Website";
+action = "nmab.paa";
+tooltip = "No More Aircraft Bouncing";
+tooltipOwned = "No More Aircraft Bouncing Owned";
