@@ -17,6 +17,7 @@
 	if ((getPos _vehicle) # 2 < 8) then {
 		_vehicle call NMAB_fnc_antiBounce;
 		_vehicle remoteExecCall ["NMAB_fnc_particles",0];
+		["NMAB_triggered",_vehicle] call CBA_fnc_globalEvent;
 	} else {
 		[{
 			isNull _this || {(getPos _this) # 2 < 8}
@@ -25,6 +26,7 @@
 
 			_this call NMAB_fnc_antiBounce;
 			_this remoteExecCall ["NMAB_fnc_particles",0];
+			["NMAB_triggered",_vehicle] call CBA_fnc_globalEvent;
 		},_vehicle,30,{}] call CBA_fnc_waitUntilAndExecute;
 	};
 }] call CBA_fnc_addClassEventHandler;
