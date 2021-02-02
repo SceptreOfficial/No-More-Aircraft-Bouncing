@@ -1,10 +1,10 @@
 [
-	"NMAB_setting_classExclusions","EDITBOX",
+	"NMAB_setting_classExclusionsStr","EDITBOX",
 	["STR_NMAB_SettingName_classExclusions","STR_NMAB_SettingInfo_classExclusions"],
 	["STR_NMAB_Title","STR_NMAB_SettingCategory_Compatibility"],
 	"",
 	true,
-	{NMAB_classExclusions = (_this splitString ",") apply {toLower _x}},
+	{NMAB_classExclusions = ((_this splitString ",") apply {toLower _x}) + (uiNamespace getVariable ["NMAB_classExclusions",[]])},
 	false
 ] call CBA_fnc_addSetting;
 
@@ -31,12 +31,7 @@
 ["Air","Killed",{
 	params ["_vehicle"];
 
-	if (
-		toLower typeOf _vehicle in NMAB_classExclusions ||
-		{_vehicle isKindOf "UAV_01_base_F"} ||
-		{_vehicle isKindOf "UAV_06_base_F"} ||
-		{_vehicle isKindOf "ParachuteBase"}
-	) exitWith {};
+	if (toLower typeOf _vehicle in NMAB_classExclusions) exitWith {};
 
 	if (isTouchingGround _vehicle) then {
 		_vehicle call NMAB_fnc_antiBounce;
