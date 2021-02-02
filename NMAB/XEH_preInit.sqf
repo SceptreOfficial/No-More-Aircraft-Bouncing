@@ -1,6 +1,6 @@
 [
 	"NMAB_setting_classExclusions","EDITBOX",
-	["STR_NMAB_SettingDisplayName_classExclusions","STR_NMAB_SettingDescription_classExclusions"],
+	["STR_NMAB_SettingName_classExclusions","STR_NMAB_SettingInfo_classExclusions"],
 	["STR_NMAB_Title","STR_NMAB_SettingCategory_Compatibility"],
 	"",
 	true,
@@ -10,7 +10,7 @@
 
 [
 	"NMAB_setting_pfxHelicopters","CHECKBOX",
-	["STR_NMAB_SettingDisplayName_pfxHelicopters","STR_NMAB_SettingDescription_pfxHelicopters"],
+	["STR_NMAB_SettingName_pfxHelicopters","STR_NMAB_SettingInfo_pfxHelicopters"],
 	["STR_NMAB_Title","STR_NMAB_SettingCategory_ParticleEffects"],
 	true,
 	false,
@@ -20,7 +20,7 @@
 
 [
 	"NMAB_setting_pfxPlanes","CHECKBOX",
-	["STR_NMAB_SettingDisplayName_pfxPlanes","STR_NMAB_SettingDescription_pfxPlanes"],
+	["STR_NMAB_SettingName_pfxPlanes","STR_NMAB_SettingInfo_pfxPlanes"],
 	["STR_NMAB_Title","STR_NMAB_SettingCategory_ParticleEffects"],
 	true,
 	false,

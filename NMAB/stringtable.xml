@@ -9,22 +9,22 @@
 	<Key ID="STR_NMAB_SettingCategory_ParticleEffects">
 		<English>Particle Effects</English>
 	</Key>
-	<Key ID="STR_NMAB_SettingDisplayName_classExclusions">
+	<Key ID="STR_NMAB_SettingName_classExclusions">
 		<English>Class exclusions</English>
 	</Key>
-	<Key ID="STR_NMAB_SettingDescription_classExclusions">
+	<Key ID="STR_NMAB_SettingInfo_classExclusions">
 		<English>Comma-delimited list of additional aircraft classes to exclude from simulation. \nVanilla parachutes and small UAVs are already handled.</English>
 	</Key>
-	<Key ID="STR_NMAB_SettingDisplayName_pfxHelicopters">
+	<Key ID="STR_NMAB_SettingName_pfxHelicopters">
 		<English>Extra particle effects - Helicopters</English>
 	</Key>
-	<Key ID="STR_NMAB_SettingDescription_pfxHelicopters">
-		<English>Enables extra fire, smoke, and particles created from helicopter wrecks.</English>
+	<Key ID="STR_NMAB_SettingInfo_pfxHelicopters">
+		<English>Enables extra PFX created from helicopter wrecks.</English>
 	</Key>
-	<Key ID="STR_NMAB_SettingDisplayName_pfxPlanes">
+	<Key ID="STR_NMAB_SettingName_pfxPlanes">
 		<English>Extra particle effects - Planes</English>
 	</Key>
-	<Key ID="STR_NMAB_SettingDescription_pfxPlanes">
-		<English>Enables extra fire, smoke, and particles created from plane wrecks.</English>
+	<Key ID="STR_NMAB_SettingInfo_pfxPlanes">
+		<English>Enables extra PFX created from plane wrecks.</English>
 	</Key>
 </Project>
