@@ -35,17 +35,16 @@
 
 	if (isTouchingGround _vehicle) then {
 		_vehicle call NMAB_fnc_antiBounce;
-		_vehicle remoteExecCall ["NMAB_fnc_particles",0];
 		["NMAB_triggered",_vehicle] call CBA_fnc_globalEvent;
 	} else {
 		[{
 			isNull _this || {isTouchingGround _this}
 		},{
 			if (isNull _this) exitWith {};
-
 			_this call NMAB_fnc_antiBounce;
-			_this remoteExecCall ["NMAB_fnc_particles",0];
-			["NMAB_triggered",_vehicle] call CBA_fnc_globalEvent;
+			["NMAB_triggered",_this] call CBA_fnc_globalEvent;
 		},_vehicle,30,{}] call CBA_fnc_waitUntilAndExecute;
 	};
 }] call CBA_fnc_addClassEventHandler;
+
+["NMAB_triggered",NMAB_fnc_particles] call CBA_fnc_addEventHandler;
