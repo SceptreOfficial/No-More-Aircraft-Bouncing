@@ -1,7 +1,7 @@
 class CfgPatches {
 	class NMAB {
 		name = "$STR_NMAB_Title";
-		version = 1;
+		version = 1.1;
 		author = "Sceptre";
 		authors[] = {"Sceptre"};
 		url = "";

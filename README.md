@@ -9,7 +9,7 @@
 
 <p align="center">
 	<a href="https://github.com/SceptreOfficial/No-More-Aircraft-Bouncing/releases/latest">
-		<img src="https://img.shields.io/badge/Version-1.0-blue?style=flat-square" alt="Version">
+		<img src="https://img.shields.io/badge/Version-1.1-blue?style=flat-square" alt="Version">
 	</a>
 	<a href="https://github.com/SceptreOfficial/No-More-Aircraft-Bouncing/issues">
 		<img src="https://img.shields.io/github/issues-raw/SceptreOfficial/No-More-Aircraft-Bouncing?style=flat-square&label=Issues" alt="Issues">
