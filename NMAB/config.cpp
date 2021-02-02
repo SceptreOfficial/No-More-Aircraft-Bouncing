@@ -22,6 +22,7 @@ class CfgFunctions {
 		class functions {
 			file = "nmab\functions";
 			class antiBounce {};
+			class killed {};
 			class particles {};
 		};
 	};
