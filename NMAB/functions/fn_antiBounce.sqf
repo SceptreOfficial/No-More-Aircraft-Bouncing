@@ -4,10 +4,9 @@
 	if (isNull _vehicle) exitWith {true};
 
 	private _vel = velocity _vehicle;
-	private _pos = getPos _vehicle;
 
 	// Slow down and fall
-	if (_pos # 2 > 5) then {
+	if (getPos _vehicle # 2 > 5) then {
 		_vel = [_vel # 0 * 0.95,_vel # 1 * 0.95,_vel # 2 - 0.2];
 		_vehicle setVelocity _vel;
 	};
