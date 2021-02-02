@@ -1,3 +1,5 @@
+if (!hasInterface) exitWith {};
+
 params ["_vehicle"];
 
 if (NMAB_setting_pfxHelicopters && _vehicle isKindOf "Helicopter") then {
